@@ -10,9 +10,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
  * @param {Record<string, string>} env
  */
 export function buildShellRemotes(env = {}) {
-  let discovered = discoverRemotes();
-
   const manifestPath = resolve(__dirname, '../public/manifest.json');
+  let discovered = discoverRemotes(
+    existsSync(manifestPath) ? manifestPath : undefined,
+  );
+
   if (existsSync(manifestPath)) {
     try {
       const json = JSON.parse(readFileSync(manifestPath, 'utf-8'));

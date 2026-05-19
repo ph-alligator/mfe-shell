@@ -146,7 +146,7 @@ export function discoverRemotes(manifestPath) {
   if (sorted.length > 0) return sorted;
 
   const shellManifest =
-    manifestPath ?? join(ROOT, 'mfe-shell/public/manifest.json');
+    manifestPath ?? join(ROOT, 'public/manifest.json');
   return discoverFromManifest(shellManifest).sort((a, b) => a.port - b.port);
 }
 
