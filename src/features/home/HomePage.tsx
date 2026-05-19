@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Button, Card, CardContent, CardHeader, CardTitle } from '@org/ui';
+import { Button, Card, CardContent, CardHeader, CardTitle } from '@ph-alligator/ui';
 import { REMOTE_REGISTRY } from '../../remotes/registry.generated';
 
 export function HomePage() {

@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { SHELL_ROUTES } from '@org/mfe-contracts';
+import { SHELL_ROUTES } from '@ph-alligator/mfe-contracts';
 import { REMOTE_REGISTRY } from '../remotes/registry.generated';
 import { ShellLayout } from '../layout/ShellLayout';
 import { ProtectedRoute } from '../features/auth/ProtectedRoute';

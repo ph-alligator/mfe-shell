@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Button } from '@org/ui';
-import { SHELL_ROUTES } from '@org/mfe-contracts';
+import { Button } from '@ph-alligator/ui';
+import { SHELL_ROUTES } from '@ph-alligator/mfe-contracts';
 import { REMOTE_REGISTRY } from '../remotes/registry.generated';
 import { useAuth } from '../features/auth/AuthContext';
 

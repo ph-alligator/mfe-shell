@@ -1,5 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
-import { Button, Card, CardContent, CardHeader, CardTitle } from '@org/ui';
+import { Button, Card, CardContent, CardHeader, CardTitle } from '@ph-alligator/ui';
 
 interface Props {
   children: ReactNode;

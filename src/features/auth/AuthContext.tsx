@@ -6,7 +6,7 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import type { ShellSession, ShellUser } from '@org/mfe-contracts';
+import type { ShellSession, ShellUser } from '@ph-alligator/mfe-contracts';
 
 interface AuthContextValue {
   session: ShellSession | null;

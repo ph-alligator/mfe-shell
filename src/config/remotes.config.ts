@@ -1,4 +1,4 @@
-import type { RemoteManifest } from '@org/mfe-contracts';
+import type { RemoteManifest } from '@ph-alligator/mfe-contracts';
 import { REMOTE_REGISTRY } from '../remotes/registry.generated';
 import { fetchRemoteManifest } from '../services/manifest.service';
 

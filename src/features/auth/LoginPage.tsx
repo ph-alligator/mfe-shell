@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { Button, Card, CardContent, CardHeader, CardTitle, Input } from '@org/ui';
-import { SHELL_ROUTES } from '@org/mfe-contracts';
+import { Button, Card, CardContent, CardHeader, CardTitle, Input } from '@ph-alligator/ui';
+import { SHELL_ROUTES } from '@ph-alligator/mfe-contracts';
 import { REMOTE_REGISTRY } from '../../remotes/registry.generated';
 import { useAuth } from './AuthContext';
 

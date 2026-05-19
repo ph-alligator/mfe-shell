@@ -1,4 +1,4 @@
-import type { RemoteManifest } from '@org/mfe-contracts';
+import type { RemoteManifest } from '@ph-alligator/mfe-contracts';
 
 export async function fetchRemoteManifest(): Promise<RemoteManifest> {
   const response = await fetch('/manifest.json', { cache: 'no-store' });

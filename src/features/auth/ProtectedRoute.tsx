@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from 'react-router-dom';
-import { SHELL_ROUTES } from '@org/mfe-contracts';
+import { SHELL_ROUTES } from '@ph-alligator/mfe-contracts';
 import { useAuth } from './AuthContext';
 
 export function ProtectedRoute({ children }: { children: React.ReactNode }) {
