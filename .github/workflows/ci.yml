@@ -8,19 +8,35 @@ on:
 
 permissions:
   contents: read
-  packages: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ph-alligator/mfe-contracts
+          path: _deps/mfe-contracts
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ph-alligator/design-system
+          path: _deps/design-system
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://npm.pkg.github.com
-          scope: '@ph-alligator'
           cache: npm
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-      - run: npm install
-      - run: npm run build
+
+      - name: Build shared packages
+        run: |
+          cd _deps/mfe-contracts && npm install && npm run build && npm pack --pack-destination "$GITHUB_WORKSPACE"
+          cd "$GITHUB_WORKSPACE/_deps/design-system" && npm install && npm run build && npm pack --pack-destination "$GITHUB_WORKSPACE"
+
+      - name: Install and build
+        run: |
+          npm install ./ph-alligator-*.tgz
+          npm install
+          npm run build
