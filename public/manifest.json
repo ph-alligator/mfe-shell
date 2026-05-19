@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-05-19T11:41:39.265Z",
+  "generatedAt": "2026-05-19T12:40:47.271Z",
   "remotes": {
     "dashboard": "http://localhost:5001/remoteEntry.js",
     "orders": "http://localhost:5002/remoteEntry.js"
