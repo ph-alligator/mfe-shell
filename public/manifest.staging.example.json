@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "remotes": {
+    "dashboard": "https://cdn.example.com/dashboard/v1.0.0/remoteEntry.js",
+    "orders": "https://cdn.example.com/orders/v1.0.0/remoteEntry.js"
+  }
+}

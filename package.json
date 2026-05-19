@@ -1,0 +1,35 @@
+{
+  "name": "@org/mfe-shell",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node ./scripts/discover-remotes.mjs",
+    "dev": "vite --port 5000",
+    "prebuild": "node ./scripts/discover-remotes.mjs",
+    "build": "vite build",
+    "preview": "vite preview --port 5000"
+  },
+  "dependencies": {
+    "@org/mfe-contracts": "^0.1.0",
+    "@org/ui": "^0.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.2.7",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ph-alligator/mfe-shell.git"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

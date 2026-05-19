@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-19T11:41:39.265Z",
+  "remotes": {
+    "dashboard": "http://localhost:5001/remoteEntry.js",
+    "orders": "http://localhost:5002/remoteEntry.js"
+  },
+  "meta": {
+    "dashboard": {
+      "route": "/dashboard",
+      "label": "Dashboard",
+      "port": 5001,
+      "package": "mfe-dashboard"
+    },
+    "orders": {
+      "route": "/orders",
+      "label": "Orders",
+      "port": 5002,
+      "package": "mfe-orders"
+    }
+  }
+}

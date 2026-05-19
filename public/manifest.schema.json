@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MFE Remote Manifest",
+  "type": "object",
+  "required": ["version", "remotes"],
+  "properties": {
+    "version": { "type": "string" },
+    "remotes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to remoteEntry.js"
+      }
+    }
+  }
+}
