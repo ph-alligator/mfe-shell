@@ -59,7 +59,7 @@ const dts = remotes
   .join('\n\n');
 
 writeFileSync(
-  resolve(ROOT, 'mfe-shell/src/remotes/remotes.generated.d.ts'),
+  resolve(SHELL_ROOT, 'src/remotes/remotes.generated.d.ts'),
   `/* AUTO-GENERATED */\n${dts}\n`,
   'utf-8',
 );
